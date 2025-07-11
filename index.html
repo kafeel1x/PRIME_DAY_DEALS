@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Prime Day Deals</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <h1>🔥 Prime Day Super Deals</h1>
+    <nav>
+      <a href="#carousel">Home</a>
+      <a href="#deals">Deals</a>
+      <a href="#submit">Submit Deal</a>
+    </nav>
+  </header>
+
+  <!-- Slideshow -->
+  <section id="carousel" class="carousel">
+    <div class="slides fade">
+      <img src="https://via.placeholder.com/1200x400?text=Big+Prime+Day+Sale" />
+    </div>
+    <div class="slides fade">
+      <img src="https://via.placeholder.com/1200x400?text=Electronics+Offers" />
+    </div>
+    <div class="slides fade">
+      <img src="https://via.placeholder.com/1200x400?text=Fashion+Deals+Live" />
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section id="deals" class="deals">
+    <h2>Featured Products</h2>
+    <div class="grid" id="productGrid"></div>
+  </section>
+
+  <!-- Submit Form -->
+  <section id="submit" class="submit-form">
+    <h2>Submit a New Deal</h2>
+    <form id="dealForm">
+      <input type="text" placeholder="Product Name" id="title" required />
+      <input type="text" placeholder="Price" id="price" required />
+      <input type="url" placeholder="Image URL" id="image" required />
+      <input type="url" placeholder="Affiliate Link" id="link" required />
+      <button type="submit">Add Deal</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Prime Affiliate Deals</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
